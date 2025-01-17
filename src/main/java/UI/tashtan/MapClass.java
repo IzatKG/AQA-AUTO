@@ -1,4 +1,4 @@
-package UI;
+package UI.tashtan;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

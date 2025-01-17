@@ -1,4 +1,4 @@
-package UI;
+package UI.tashtan;
 
 public class  Main {
     public static void main(String[] args) {

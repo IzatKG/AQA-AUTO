@@ -1,4 +1,4 @@
-package UI;
+package UI.tashtan;
 
 public class TashCass {
     public static void main(String[] args) {
