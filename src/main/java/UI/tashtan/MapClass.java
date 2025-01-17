@@ -36,6 +36,6 @@ public class MapClass {
         for (Map.Entry<String, Integer> entry : linkedHashMap.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
-
+        System.out.println("=======");
     }
 }
