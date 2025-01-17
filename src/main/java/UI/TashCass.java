@@ -7,5 +7,6 @@ public class TashCass {
         System.out.println("MMM");
         System.out.println("sssgir add ." +
                 "dfd");
+        System.out.println("Lat one");
     }
 }
