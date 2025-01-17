@@ -7,5 +7,6 @@ public class  Main {
         // переключение git checkout
         // git merge main  cлияние изменений
         // git status - показывает состояние ветки
+        //мпаанга
     }
 }
