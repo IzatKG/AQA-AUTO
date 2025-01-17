@@ -30,5 +30,7 @@ public class MapAB2 {
         test3.put("b", "bbb");
         test3.put("c", "aaa");
         System.out.println("Test 3: " + mapAB2(test3)); // Ожидаем {"a": "aaa", "b": "bbb", "c": "aaa"}
+
+        System.out.println("STASH");
     }
 }

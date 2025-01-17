@@ -5,5 +5,7 @@ public class Main {
         //создать ветку   git branch
         //создать ветку  и переключение на ветку  git checkout -b
         // переключение git checkout
+        // git merge main  cлияние изменений
+        // git status - показывает состояние ветки
     }
 }
