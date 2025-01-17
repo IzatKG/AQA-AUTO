@@ -5,5 +5,6 @@ public class Main {
         //создать ветку   git branch
         //создать ветку  и переключение на ветку  git checkout -b
         // переключение git checkout
+        System.out.println("Hello!!!");
     }
 }
