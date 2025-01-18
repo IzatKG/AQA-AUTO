@@ -21,4 +21,5 @@ public class Map1 {
                 .map(Map.Entry::getKey).forEach(System.out::println);
 
     }
+
 }
