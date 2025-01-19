@@ -16,9 +16,8 @@ public class Arrays {
 
         int[] numm = {4, 5, 6};
         int[] result = makeLast(numm);
-        System.out.println("Result: ");
         for (int n : result) {
-            System.out.println(n + " ");
+            System.out.println( "Result:" + n );
         }
     }
 
