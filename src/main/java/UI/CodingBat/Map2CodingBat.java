@@ -4,18 +4,18 @@ public class Map2CodingBat {
 
     public static String firstTwo(String str) {
         if (str.length() < 2) {
-            return str; // Если длина строки меньше двух, возвращаем её полностью
+            return str;
         }
-        return str.substring(0, 2); // Иначе возвращаем первые два символа
+        return str.substring(0, 2);
     }
 
     public static void main(String[] args) {
         // Примеры использования
-        System.out.println(firstTwo("Hello"));   // He
-        System.out.println(firstTwo("abcdefg")); // ab
-        System.out.println(firstTwo("ab"));      // ab
-        System.out.println(firstTwo("a"));       // a
-        System.out.println(firstTwo(""));        // (пустая строка)
+        System.out.println(firstTwo("Hello"));
+        System.out.println(firstTwo("abcdefg"));
+        System.out.println(firstTwo("ab"));
+        System.out.println(firstTwo("a"));
+        System.out.println(firstTwo(""));
     }
 }
 
