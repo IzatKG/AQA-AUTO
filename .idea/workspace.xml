@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbb66bee-80a5-4c4e-8106-549a7076b51e" name="Changes" comment="Задача1 с Map1">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fbb66bee-80a5-4c4e-8106-549a7076b51e" name="Changes" comment="Задача1 с Map1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +55,7 @@
     "Application.Main.executor": "Run",
     "Gradle.AQA-AUTO12 [:MyTest.main()].executor": "Run",
     "Gradle.AQA-AUTO12 [:UI.CodingBat.Map2CodingBat.main()].executor": "Run",
+    "Gradle.AQA-AUTO12 [:UI.arraysBat.ArrayMakeLast.main()].executor": "Run",
     "Gradle.AQA-AUTO12 [:UI.arraysBat.ArraysTwentyFour.main()].executor": "Run",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "project.structure.last.edited": "Project",
@@ -65,7 +63,20 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ArraysTwentyFour">
+  <component name="RunManager" selected="Application.ArrayMakeLast">
+    <configuration name="ArrayMakeLast" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UI.arraysBat.ArrayMakeLast" />
+      <module name="Integrattion_Mobile_Api.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UI.arraysBat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArraysTwentyFour" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UI.arraysBat.ArraysTwentyFour" />
       <module name="Integrattion_Mobile_Api.main" />
@@ -112,17 +123,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ArrayMakeLast" />
+      <item itemvalue="Application.ArraysTwentyFour" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Map2CodingBat" />
+      <item itemvalue="Application.MyTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayMakeLast" />
         <item itemvalue="Application.ArraysTwentyFour" />
         <item itemvalue="Application.MyTest" />
         <item itemvalue="Application.Map2CodingBat" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
   <component name="TaskManager">
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
