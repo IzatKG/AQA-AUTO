@@ -3,7 +3,9 @@ import java.util.ArrayList;
 
 public class ArrayListExample {
     public static void main(String[] args) {
-        // Создание ArrayList
+
+        System.out.println("This is example class with ArrayList");
+      /*  // Создание ArrayList
         ArrayList<String> list = new ArrayList<>();
 
         // Добавление элементов
@@ -46,6 +48,6 @@ public class ArrayListExample {
         // Очистка списка
         list.clear();
         System.out.println("\nList after clearing all elements:");
-        System.out.println("Size: " + list.size());
+        System.out.println("Size: " + list.size());*/
     }
 }

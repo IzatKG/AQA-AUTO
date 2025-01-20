@@ -7,6 +7,8 @@ import java.util.TreeMap;
 
 public class MapClass {
     public static void main(String[] args) {
+        System.out.println("tis is exampe class with Map");
+       /*
         // 1. Использование HashMap
         Map<String, Integer> hashMap = new HashMap<>();
         hashMap.put("Banana", 3);
@@ -36,6 +38,6 @@ public class MapClass {
         for (Map.Entry<String, Integer> entry : linkedHashMap.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
-        System.out.println("=======");
+        System.out.println("=======");*/
     }
 }
