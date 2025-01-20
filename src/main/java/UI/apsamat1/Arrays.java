@@ -11,5 +11,4 @@ public class Arrays {
 
         return nums[0] == 6 || nums[nums.length - 1] == 6;
     }
-
 }
