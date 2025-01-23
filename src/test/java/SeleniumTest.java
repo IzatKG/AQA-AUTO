@@ -17,27 +17,29 @@ public class SeleniumTest {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
     }
-@Test
-@DisplayName("Demoga Resume")
+
+    @Test
+    @DisplayName("Demoga Resume")
     public void GoogleTest() {
-    driver.get("https://demoqa.com/text-box");
-    WebElement fullName= driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[2]/div[2]/form/div[1]/div[2]/input"));
-fullName.sendKeys("Абдымуса уулу Медер");
+        driver.get("https://demoqa.com/text-box");
+        WebElement fullName = driver.findElement(By.xpath("//*[@id=\"userName\"]"));
+        fullName.sendKeys("Абдымуса уулу Медер");
 
-    WebElement email= driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[2]/div[2]/form/div[2]/div[2]/input"));
-email.sendKeys("abdymusaevvv@gmail.ru");
+        WebElement email = driver.findElement(By.xpath("//*[@id=\"userEmail\"]"));
+        email.sendKeys("abdymusaevvv@gmail.ru");
 
-    WebElement currentAddress= driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[2]/div[2]/form/div[3]/div[2]/textarea"));
-    currentAddress.sendKeys("Чуйская область Чуйский Район село Кош-Кашат ул Суюнбаева N4");
+        WebElement currentAddress = driver.findElement(By.xpath("//*[@id=\"currentAddress\"]"));
+        currentAddress.sendKeys("Чуйская область Чуйский Район село Кош-Кашат ул Суюнбаева N4");
 
-WebElement permanentAddress = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[2]/div[2]/form/div[4]/div[2]/textarea"));
-    permanentAddress.sendKeys("Токмок");
+        WebElement permanentAddress = driver.findElement(By.xpath("//*[@id=\"permanentAddress\"]"));
+        permanentAddress.sendKeys("Токмок");
 
-WebElement enterButton = driver.findElement(By.xpath("//*[@id=\"submit\"]"));
-enterButton.click();
-}
-@AfterAll
-    public static void tearDown(){
-//driver.quit();
-}
+        WebElement enterButton = driver.findElement(By.xpath("//*[@id=\"submit\"]"));
+        enterButton.click();
+    }
+
+    @AfterAll
+    public static void tearDown() {
+    //driver.quit();
+    }
 }

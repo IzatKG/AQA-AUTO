@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbb66bee-80a5-4c4e-8106-549a7076b51e" name="Changes" comment="Задача1 с Map1">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Translate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,7 @@
       <recent name="C:\Users\user\IdeaProjects\untitledewtdfhf\AQA-AUTO\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SeleniumTest">
+  <component name="RunManager" selected="Gradle.SeleniumTest.GoogleTest">
     <configuration name="AQA-AUTO [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -234,9 +232,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SeleniumTest.GoogleTest" />
         <item itemvalue="Gradle.SeleniumTest" />
         <item itemvalue="Gradle.AQA-AUTO [dependencies]" />
-        <item itemvalue="Gradle.SeleniumTest.GoogleTest" />
         <item itemvalue="Gradle.Translate.GoogleTest" />
         <item itemvalue="Gradle.SeleniumTest.Google" />
       </list>
