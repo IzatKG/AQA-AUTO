@@ -12,5 +12,6 @@ public class MyTest {
    @DisplayName("check the foodButton")
     public void myFirstTest(){
        System.out.println("My Test ");
+       System.out.println("hjkj");
    }
 }
