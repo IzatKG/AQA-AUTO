@@ -8,38 +8,30 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class SeleniumTest {
-    public static WebDriver driver;
-
-    @BeforeAll
-    public static void setUp() {
-        System.setProperty("webdriver.chromedriver", "\"C:\\Program Files\\Google\\Chrome\\chromedriver-win64");
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-    }
+public class SeleniumTest extends BaseTest {
 
     @Test
     @DisplayName("Demoga Resume")
     public void GoogleTest() {
         driver.get("https://demoqa.com/text-box");
-        WebElement fullName = driver.findElement(By.xpath("//*[@id=\"userName\"]"));
+        WebElement fullName = driver.findElement(By.id("userName"));
         fullName.sendKeys("Абдымуса уулу Медер");
 
-        WebElement email = driver.findElement(By.xpath("//*[@id=\"userEmail\"]"));
+        WebElement email = driver.findElement(By.id("userEmail"));
         email.sendKeys("abdymusaevvv@gmail.ru");
 
-        WebElement currentAddress = driver.findElement(By.xpath("//*[@id=\"currentAddress\"]"));
-        currentAddress.sendKeys("Чуйская область Чуйский Район село Кош-Кашат ул Суюнбаева N4");
+        WebElement currentAddress = driver.findElement(By.id("currentAddress"));
+        currentAddress.sendKeys("Чуйский Район село Кош-Кашат ул Суюнбаева N4");
 
-        WebElement permanentAddress = driver.findElement(By.xpath("//*[@id=\"permanentAddress\"]"));
+        WebElement permanentAddress = driver.findElement(By.id("permanentAddress"));
         permanentAddress.sendKeys("Токмок");
 
-        WebElement enterButton = driver.findElement(By.xpath("//*[@id=\"submit\"]"));
+        WebElement enterButton = driver.findElement(By.id("submit"));
         enterButton.click();
+        WebElement enterButton2 = driver.findElement(By.id("submit"));
+        enterButton.click();
+
     }
 
-    @AfterAll
-    public static void tearDown() {
-    //driver.quit();
-    }
+
 }
