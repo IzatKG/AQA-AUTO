@@ -3,35 +3,32 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 
+public class TestQa {
+    private static WebDriver driver;
 
-    public class TestQa {
+    @BeforeAll
+    public static void setup() {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Desktop\\chromedriver-win32\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().window().maximize(); // Открыть браузер на весь экран
+    }
 
-        private WebDriver driver;
+    @AfterAll
+    public static void tearDown() {
+        //  Закрываем браузер после теста
+       //  if (driver != null) {
+        //    driver.quit();
+      //  }
+    }
 
-        @BeforeEach
-        public void setup() {
-            // Устанавливаем путь к chromedriver
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Desktop\\chromedriver-win32\\chromedriver.exe");
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver(); // Инициализация драйвера
-            driver.manage().window().maximize(); // Открыть браузер на весь экран
-
-        }
-
-        @AfterEach
-        public void tearDown() {
-            //  Закрываем браузер после теста
-            // if (driver != null) {
-            //  driver.quit();
-            //  }
-        }
-
-        @Test
+    @Test
         @DisplayName("DemoQa field test")
+        @Order(1)
         public void DemoTest() {
             // Открываем страницу DemoQa
             driver.get("https://demoqa.com/text-box");
@@ -41,7 +38,7 @@ import org.openqa.selenium.JavascriptExecutor;
             userNameField.sendKeys("Leonid Gavrilov");
 
             // Находим поле для Email и вводим значение
-            WebElement emailField = driver.findElement(By.xpath("//input[@id='userEmail']"));
+            WebElement emailField = driver.findElement(By.xpath("//input[@type='email']"));
             emailField.sendKeys("EbaYaProgrammist@mail.ru");
 
             // Находим поле для Current Address и вводим значение
@@ -65,5 +62,5 @@ import org.openqa.selenium.JavascriptExecutor;
 
 
         }
-    }
+}
 
