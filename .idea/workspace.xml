@@ -4,33 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbb66bee-80a5-4c4e-8106-549a7076b51e" name="Changes" comment="Задача1 с Map1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/UI/array/izat/MyClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UI/driver/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UI/driverFactory/ChromeWebDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UI/driverFactory/PropertyReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DemoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16_01_2025_22_37_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16_01_2025_22_37__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/Utils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/apsamat1/Arrays.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/apsamat1/String1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/izat/MyClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/joldosh/CodingBat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/array/joldosh/CodingBat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/joldosh/Map1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/array/joldosh/Map1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="fbb66bee-80a5-4c4e-8106-549a7076b51e" name="Changes" comment="Задача1 с Map1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,10 +29,10 @@
     &quot;accountId&quot;: &quot;9eee0a3e-3a36-4c71-b96e-08742d420b35&quot;
   }
 }</component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2s6eBJbKlNT2E3YPicCyO4uXZfn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -58,7 +46,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.Main.executor": "Run",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Merging Joldosh"
+    "git-widget-placeholder": "Joldosh"
   }
 }]]></component>
   <component name="Push.Settings">
