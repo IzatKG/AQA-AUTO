@@ -1,4 +1,4 @@
-package UI.joldosh;
+package UI.array.joldosh;
 
 import java.util.Arrays;
 import java.util.HashMap;

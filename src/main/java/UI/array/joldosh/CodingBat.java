@@ -1,4 +1,4 @@
-package UI.joldosh;
+package UI.array.joldosh;
 
 public class CodingBat {
     public static int[] rotateLeft3(int[] nums) {
