@@ -9,8 +9,9 @@ public class CheckBox extends BaseTest {
     @DisplayName("Demoga checkBox")
     public void Demoga() {
         driver.get("https://demoqa.com/checkbox");
-        WebElement buttoncheck = driver.findElement(By.id("button/svg"));
+        WebElement buttoncheck = driver.findElement(By.xpath("//*[@id=\"tree-node\"]/ol/li/span/label/span[1]/svg"));
         buttoncheck.click();
+
 
     }
 }
