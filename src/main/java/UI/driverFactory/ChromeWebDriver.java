@@ -17,14 +17,15 @@ public class ChromeWebDriver {
         options.addArguments(("--window-size=1920,1080"));
         options.addArguments(("--no-sandbox"));
 
-
-        if (Boolean.parseBoolean(PropertyReader.getProperty("headless"))) {
-            options.addArguments("--headless");
-        }
+//
+//        if (Boolean.parseBoolean(PropertyReader.getProperty("headless"))) {
+//            options.addArguments("--headless");
+//        }
 
         WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
         return driver;
     }
 }
