@@ -3,13 +3,8 @@ import UI.driverFactory.PropertyReader;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.time.Duration;
-
-
-
-public class BaseTest {
+public class BaseTest1 {
     public static WebDriver driver;
 
     @BeforeEach
@@ -23,4 +18,3 @@ public class BaseTest {
          Driver.quitDriver();
         }
     }
-
