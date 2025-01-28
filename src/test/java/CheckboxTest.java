@@ -19,12 +19,12 @@ public class CheckboxTest extends BaseTest {
 
     @Test
     public void checkCheckboxTest() {
+        
       //  WebElement elementsButton = driver.findElement(By.xpath("//h5[text()='Elements']"));
        // scrollToElement(driver, elementsButton);
         //elementsButton.click();
         //  WebElement checkboxBtn = driver.findElement(By.xpath("//span[text()='Check Box']"));
         // checkboxBtn.click();
-
         //  assertTrue(checkboxBtn.isDisplayed());
         // assertTrue(checkboxBtn.isEnabled());
 
