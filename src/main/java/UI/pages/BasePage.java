@@ -11,4 +11,5 @@ public class BasePage {
         PageFactory.initElements(Driver.getDriver(),this);
 
     }
+
 }
