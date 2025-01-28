@@ -1,5 +1,4 @@
 
-
 import UI.owner.Owner;
 import UI.owner.Owners;
 import org.junit.jupiter.api.Test;
@@ -7,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-@Owner(Owners.BEKZHAN_BARATOV)
+@Owner(Owners.IZAT_YKLASOV)
 public class CheckboxTest extends BaseTest {
 
     @Test
@@ -20,8 +19,8 @@ public class CheckboxTest extends BaseTest {
 
     @Test
     public void checkCheckboxTest() {
-        //  WebElement elementsButton = driver.findElement(By.xpath("//h5[text()='Elements']"));
-        // scrollToElement(driver, elementsButton);
+      //  WebElement elementsButton = driver.findElement(By.xpath("//h5[text()='Elements']"));
+       // scrollToElement(driver, elementsButton);
         //elementsButton.click();
         //  WebElement checkboxBtn = driver.findElement(By.xpath("//span[text()='Check Box']"));
         // checkboxBtn.click();

@@ -5,11 +5,9 @@ import org.aeonbits.owner.Config;
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
         "system:properties",
-        "fiel:src/main/resources/config.properties"
+        "file:src/main/resources/config.properties"
 })
-
-public interface ConfigProperties extends Config {
-
+public interface ConfigProperties extends Config{
     @Key("browser")
     String browser();
 
@@ -17,7 +15,6 @@ public interface ConfigProperties extends Config {
     boolean headless();
 
     @Key("url")
-    @DefaultValue("https:example.com")
+    @DefaultValue("https://example.com")
     String url();
-
 }
