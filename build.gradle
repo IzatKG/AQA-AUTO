@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'io.qameta.allure' version '2.11.2'
 }
 
 group = 'mobile-ui'
@@ -7,6 +8,12 @@ version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+}
+allure {
+    version = '2.22.0'
+    adapter {
+        autoconfigure = true
+    }
 }
 
 dependencies {
