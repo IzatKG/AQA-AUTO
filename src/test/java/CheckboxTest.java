@@ -1,26 +1,42 @@
 
 import UI.owner.Owner;
 import UI.owner.Owners;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 @Owner(Owners.IZAT_YKLASOV)
 public class CheckboxTest extends BaseTest {
 
+    @Epic("Valid checkbox")
+    @Feature("click functionality")
     @Test
-    public void checkboxTest(){
-        checkboxPage
-                .elementsButton.click();
+    public void checkboxTest() {
+     checkboxPage
+             .clickElementsBtn()
+             .clickCheckboxBtnAndToggler();
 
+       assertTrue(checkboxPage.checkboxButton.isEnabled());
     }
+
+
+
+
+
+
+
+
+
+
+
 
 
     @Test
     public void checkCheckboxTest() {
-      //  WebElement elementsButton = driver.findElement(By.xpath("//h5[text()='Elements']"));
-       // scrollToElement(driver, elementsButton);
+        //  WebElement elementsButton = driver.findElement(By.xpath("//h5[text()='Elements']"));
+        // scrollToElement(driver, elementsButton);
         //elementsButton.click();
         //  WebElement checkboxBtn = driver.findElement(By.xpath("//span[text()='Check Box']"));
         // checkboxBtn.click();
@@ -35,8 +51,5 @@ public class CheckboxTest extends BaseTest {
         // scrollToElement(driver,documentChekcbox);
     }
 
-    public static void scrollToElement(WebDriver driver, WebElement element) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView(true);", element);
-    }
+
 }

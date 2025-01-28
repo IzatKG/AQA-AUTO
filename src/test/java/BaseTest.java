@@ -1,6 +1,5 @@
 
 import UI.driver.Driver;
-import UI.driverFactory.PropertyReader;
 import UI.helper.WebElementActions;
 import UI.owner.ConfigProperties;
 import UI.pages.CheckboxPage;
@@ -27,9 +26,8 @@ public class BaseTest {
 
     }
 
-
     @AfterAll
     public static void tearDown() {
-      //  Driver.quitDriver();
+        Driver.quitDriver();
     }
 }
