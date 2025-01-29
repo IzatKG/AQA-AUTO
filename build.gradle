@@ -1,19 +1,44 @@
 plugins {
     id 'java'
+    id 'io.qameta.allure' version '2.11.2'
+
 }
 
-group = 'org.example'
+group = 'mobile-ui'
 version = '1.0-SNAPSHOT'
 
+allure {
+    version = '2.22.0'
+    adapter {
+        autoconfigure = true
+    }
+}
 repositories {
     mavenCentral()
 }
 
+
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation platform('org.junit:junit-bom:5.9.1')
+    implementation 'org.junit.jupiter:junit-jupiter'
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.9.2'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.26.0'
+    implementation 'org.aeonbits.owner:owner:1.0.12'
+    implementation 'io.qameta.allure:allure-junit5:2.22.0'
+    implementation 'io.qameta.allure:allure-java-commons:2.22.0'
+
+
+
 }
 
 test {
     useJUnitPlatform()
+}
+
+allure {
+    version = '2.22.0'
+    adapter {
+        autoconfigure = true
+    }
 }
