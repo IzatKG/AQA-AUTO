@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import static UI.pages.CheckboxPage.scrollToElement;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 @Owner(Owners.TOBOKELOV_JOLDOSH)
 public class DemoTest extends BaseTest {
@@ -54,8 +55,8 @@ public class DemoTest extends BaseTest {
 //
     }
 
-    public static void scrollToElement(WebDriver driver, WebElement element) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeAsyncScript("arguments[0].scrollIntoView(true);", element);
-    }
+//    public static void scrollToElement(WebDriver driver, WebElement element) {
+//        JavascriptExecutor js = (JavascriptExecutor) driver;
+//        js.executeAsyncScript("arguments[0].scrollIntoView(true);", element);
+//    }
 }
