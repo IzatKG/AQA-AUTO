@@ -1,19 +1,27 @@
 
 import UI.owner.Owner;
 import UI.owner.Owners;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 @Owner(Owners.TOBOKELOV_JOLDOSH)
 public class CheckboxTest extends BaseTest {
 
+    @Epic("Valid checkbox")
+    @Feature("click functionality")
     @Test
-    public void checkboxTest(){
-        checkboxPage
-                .elementsButton.click();
+    public void checkboxTest() {
+     checkboxPage
+             .clickElementsBtn()
+             .clickCheckboxBtnAndToggler();
 
+       assertTrue(checkboxPage.checkboxButton.isEnabled());
     }
 
 
