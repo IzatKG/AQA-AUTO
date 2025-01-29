@@ -17,6 +17,9 @@ public class CheckboxPage extends BasePage {
     @FindBy(xpath = "(//button[@type='button'])[4]")
     public WebElement toggler;
 
+    @FindBy(xpath = "//button[@aria-label='Expand all']")
+    public WebElement expand;
+
     @Step
     public CheckboxPage clickElementsBtn() {
         scrollToElement(Driver.getDriver(), elementsButton);
@@ -28,6 +31,7 @@ public class CheckboxPage extends BasePage {
     public CheckboxPage clickCheckboxBtnAndToggler() {
         elementActions.click(checkboxButton);
         elementActions.click(toggler);
+        elementActions.click(expand);
         return this;
     }
 
