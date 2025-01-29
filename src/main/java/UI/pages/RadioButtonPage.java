@@ -12,9 +12,19 @@ public class RadioButtonPage extends BasePage{
     @FindBy(xpath = "//span[text()='Yes']")
     public WebElement yesText;
 
+    @FindBy(xpath = "//label[@for='impressiveRadio']")
+    public WebElement impressiveButton;
+
     @Step("Click yes button")
     public RadioButtonPage clickYesBnt(){
         yesButton.click();
         return this;
+
     }
 }
+
+
+
+
+
+
