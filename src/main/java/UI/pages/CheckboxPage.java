@@ -11,8 +11,6 @@ public class CheckboxPage extends BasePage {
     @FindBy(xpath = "//h5[text()='Elements']")
     public WebElement elementsButton;
 
-<<<<<<< HEAD
-=======
     @FindBy(xpath = "//span[text()='Check Box']")
     public WebElement checkboxButton;
 
@@ -38,4 +36,4 @@ public class CheckboxPage extends BasePage {
         js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 }
->>>>>>> e7c195736df01d0e0daa94e220e69744c457dedd
+
