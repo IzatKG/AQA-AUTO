@@ -20,11 +20,9 @@ public class CheckboxTest extends BaseTest {
     public void checkboxTest() {
         checkboxPage
                 .clickElementsBtn()
-                .clickCheckboxBtnAndToggle();
+                .clickCheckboxBtnAndToggler();
 
-
-        assertTrue(checkboxPage.checkboxButton.isDisplayed());
-
+        assertTrue(checkboxPage.checkboxButton.isEnabled());
     }
 
 

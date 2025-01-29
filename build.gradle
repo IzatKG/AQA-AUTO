@@ -6,15 +6,16 @@ plugins {
 group = 'mobile-ui'
 version = '1.0-SNAPSHOT'
 
-repositories {
-    mavenCentral()
-}
 allure {
     version = '2.22.0'
     adapter {
         autoconfigure = true
     }
 }
+repositories {
+    mavenCentral()
+}
+
 
 dependencies {
     implementation platform('org.junit:junit-bom:5.9.1')
