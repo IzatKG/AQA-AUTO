@@ -4,9 +4,6 @@ import UI.owner.Owners;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -25,10 +22,21 @@ public class CheckboxTest extends BaseTest {
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
     @Test
     public void checkCheckboxTest() {
-      //  WebElement elementsButton = driver.findElement(By.xpath("//h5[text()='Elements']"));
-       // scrollToElement(driver, elementsButton);
+        //  WebElement elementsButton = driver.findElement(By.xpath("//h5[text()='Elements']"));
+        // scrollToElement(driver, elementsButton);
         //elementsButton.click();
         //  WebElement checkboxBtn = driver.findElement(By.xpath("//span[text()='Check Box']"));
         // checkboxBtn.click();
@@ -43,8 +51,5 @@ public class CheckboxTest extends BaseTest {
         // scrollToElement(driver,documentChekcbox);
     }
 
-    public static void scrollToElement(WebDriver driver, WebElement element) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView(true);", element);
-    }
+
 }

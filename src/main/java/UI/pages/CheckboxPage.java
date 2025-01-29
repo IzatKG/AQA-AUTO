@@ -36,3 +36,4 @@ public class CheckboxPage extends BasePage {
         js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 }
+

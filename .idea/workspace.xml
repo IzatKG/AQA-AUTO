@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="fbb66bee-80a5-4c4e-8106-549a7076b51e" name="Changes" comment="Задача1 с Map1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+=======
+<<<<<<< HEAD
+    <list default="true" id="fbb66bee-80a5-4c4e-8106-549a7076b51e" name="Changes" comment="Задача1 с Map1">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16_01_2025_22_37__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+=======
     <list default="true" id="fbb66bee-80a5-4c4e-8106-549a7076b51e" name="Changes" comment="Задача1 с Map1" />
 >>>>>>> origin
+>>>>>>> 719f3a5888ddf4d64eb1bf2e64cd359e89a9c805
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +28,38 @@
       <ProjectState />
     </projectState>
   </component>
+<<<<<<< HEAD
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+=======
+<<<<<<< HEAD
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+>>>>>>> 719f3a5888ddf4d64eb1bf2e64cd359e89a9c805
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Integrattion_Mobile_Api" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin
+>>>>>>> 719f3a5888ddf4d64eb1bf2e64cd359e89a9c805
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -25,12 +69,37 @@
     &quot;accountId&quot;: &quot;9eee0a3e-3a36-4c71-b96e-08742d420b35&quot;
   }
 }</component>
+<<<<<<< HEAD
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2sCozFjrzTya41blpAOvCT234PG" />
+=======
+<<<<<<< HEAD
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2rlPxc2YKZeNQJckqS2H3gjTdIE" />
+>>>>>>> 719f3a5888ddf4d64eb1bf2e64cd359e89a9c805
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+<<<<<<< HEAD
+=======
+=======
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
 >>>>>>> origin
+>>>>>>> 719f3a5888ddf4d64eb1bf2e64cd359e89a9c805
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+<<<<<<< HEAD
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+=======
 <<<<<<< HEAD
     &quot;Gradle.MyTest.myFirstTest.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -45,6 +114,7 @@
 }</component>
   <component name="RunManager" selected="Gradle.MyTest.myFirstTest">
 =======
+>>>>>>> 719f3a5888ddf4d64eb1bf2e64cd359e89a9c805
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;
 >>>>>>> refs/remotes/origin/main
@@ -100,10 +170,17 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="fbb66bee-80a5-4c4e-8106-549a7076b51e" name="Changes" comment="Задача1 с Map1" />
+<<<<<<< HEAD
+      <created>1737969179596</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737969179596</updated>
+=======
       <created>1737130944723</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737130944723</updated>
+>>>>>>> 719f3a5888ddf4d64eb1bf2e64cd359e89a9c805
     </task>
     <servers />
   </component>
