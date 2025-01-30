@@ -24,11 +24,17 @@ public class CheckboxPage extends BasePage {
     @FindBy(xpath = "//button[@aria-label='Expand all']")
     public WebElement expand;
 
-    @FindBy(xpath = "//input[@id='tree-node-commands']")
-    public WebElement nodeCommands;
+    @FindBy(xpath = "//label[@for='tree-node-commands']")//input[@id='tree-node-commands']
+    public WebElement nodeCommands;//label[@for='tree-node-commands']
 
-    @FindBy(xpath = "//input[@id='tree-node-private']")
+    @FindBy(xpath = "//label[@for='tree-node-react']")
+    public WebElement nodeReact;
+
+    @FindBy(xpath = "//label[@for='tree-node-private']")
     public WebElement nodePrivate;
+
+    @FindBy(xpath = "//label[@for='tree-node-downloads']")
+    public WebElement nodeDownloads;
 
     @Step
     public CheckboxPage clickElementsBtn() {
@@ -47,9 +53,11 @@ public class CheckboxPage extends BasePage {
     }
 
     @Step("Click private")
-    public CheckboxPage clickCheckboxBtnAndPr(){
+    public CheckboxPage clickCheckboxBtnAndPath() {
         elementActions.click(nodeCommands);
+        elementActions.click(nodeReact);
         elementActions.click(nodePrivate);
+        elementActions.click(nodeDownloads);
         return this;
     }
 

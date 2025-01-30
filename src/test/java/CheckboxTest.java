@@ -19,9 +19,10 @@ public class CheckboxTest extends BaseTest {
     @Test
     public void checkboxTest() {
         checkboxPage.clickElementsBtn()
-                .clickCheckboxBtnAndToggler();
-        //.clickCheckboxBtnAndPr();
+                .clickCheckboxBtnAndToggler()
+                .clickCheckboxBtnAndPath();
 
+        // System.out.println(checkboxPage.nodePrivate.isSelected());
         assertTrue(checkboxPage.checkboxButton.isEnabled());
     }
 
