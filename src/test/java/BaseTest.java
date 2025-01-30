@@ -11,14 +11,13 @@ import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.WebDriver;
 
 public class BaseTest {
+    public static CheckboxPage checkboxPage;
 
     public static RadioButtonPage radioButtonPage;
 
-    public static CheckboxPage checkboxPage;
+    public static MainPage mainPage;
 
     public static WebElementActions webElementActions;
-
-    public static MainPage mainPage;
 
     public static WebDriver driver;
     static ConfigProperties config = ConfigFactory.create(ConfigProperties.class);
@@ -26,8 +25,8 @@ public class BaseTest {
     @BeforeAll
     public static void setUp() {
         checkboxPage = new CheckboxPage();
-       radioButtonPage = new RadioButtonPage();
-       mainPage = new MainPage();
+        radioButtonPage = new RadioButtonPage();
+        mainPage = new MainPage();
         webElementActions = new WebElementActions();
         // PropertyReader.readProperty();
         driver = Driver.getDriver();
@@ -36,7 +35,6 @@ public class BaseTest {
         driver.get(config.url());
 
     }
-
 
     @AfterAll
     public static void tearDown() {

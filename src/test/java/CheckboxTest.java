@@ -15,12 +15,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class CheckboxTest extends BaseTest {
 
     @Epic("Valid checkbox")
-    @Feature("click functionality ")
+    @Feature("click functionality")
     @Test
     public void checkboxTest() {
-        checkboxPage
-                .clickElementsBtn()
+        checkboxPage.clickElementsBtn()
                 .clickCheckboxBtnAndToggler();
+        //.clickCheckboxBtnAndPr();
 
         assertTrue(checkboxPage.checkboxButton.isEnabled());
     }

@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class CheckboxPage extends BasePage {
+
     @FindBy(xpath = "//h5[text()='Elements']")
     public WebElement elementsButton;
 
@@ -17,8 +18,17 @@ public class CheckboxPage extends BasePage {
     @FindBy(xpath = "(//button[@type='button'])[4]")
     public WebElement toggler;
 
+    @FindBy(xpath = "//label[@for='tree-node-desktop']")
+    public WebElement desktop;
+
     @FindBy(xpath = "//button[@aria-label='Expand all']")
     public WebElement expand;
+
+    @FindBy(xpath = "//input[@id='tree-node-commands']")
+    public WebElement nodeCommands;
+
+    @FindBy(xpath = "//input[@id='tree-node-private']")
+    public WebElement nodePrivate;
 
     @Step
     public CheckboxPage clickElementsBtn() {
@@ -31,7 +41,15 @@ public class CheckboxPage extends BasePage {
     public CheckboxPage clickCheckboxBtnAndToggler() {
         elementActions.click(checkboxButton);
         elementActions.click(toggler);
+        elementActions.click(desktop);
         elementActions.click(expand);
+        return this;
+    }
+
+    @Step("Click private")
+    public CheckboxPage clickCheckboxBtnAndPr(){
+        elementActions.click(nodeCommands);
+        elementActions.click(nodePrivate);
         return this;
     }
 
@@ -40,3 +58,4 @@ public class CheckboxPage extends BasePage {
         js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 }
+
