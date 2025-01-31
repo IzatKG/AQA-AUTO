@@ -1,16 +1,34 @@
+<<<<<<< HEAD
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+=======
+>>>>>>> f960a5bab0988b57c7bde08028f7c1e9db4e150b
 
-public class MyTest {
+import org.junit.jupiter.api.*;
 
-    public static void main(String[] args) {
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@Tag("smoke")
+public class MyTest{
+
+    @BeforeEach
+    public void beforeEach(){
+        System.out.println("BEFORE_EACH");
+    }
+    @AfterEach
+    public void afterEach(){
+        System.out.println("AFTER_EACH");
+    }
+    @BeforeAll
+    public static void setUp() {
+        System.out.println("Berfore_ALL");
 
     }
 
+<<<<<<< HEAD
    @Test
    @DisplayName("check the foodButton")
     public void myFirstTest(){
@@ -59,5 +77,36 @@ public class MyTest {
 
 
         }
+=======
+    @AfterAll
+    public static void tearDown() {
+        // driver.quit();
+        System.out.println("After_ALL");
+    }
+
+    @Test
+    @DisplayName("check the foodButton")
+    @Order(0)
+    public void myFirstTest() {
+        //  driver.get("  https://demoqa.com/text-box");
+        System.out.println("1 test");
+    }
+
+    @Test
+    @DisplayName("check the foodButton")
+    @Order(1)
+
+    public void mySecondTest() {
+        System.out.println("2 test");
+
+    }
+    @Test
+    @DisplayName("check the foodButton")
+    @Order(2)
+    @Disabled("Этот тест временно отключен")
+    public void myThirdTest() {
+        System.out.println("3 test");
+
+>>>>>>> f960a5bab0988b57c7bde08028f7c1e9db4e150b
     }
 }

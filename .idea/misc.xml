@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_19" project-jdk-name="corretto-19" project-jdk-type="JavaSDK" />
 =======
@@ -12,7 +13,8 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17" project-jdk-type="JavaSDK" />
 >>>>>>> ce55f6bd1c0b3f89ccec72ef4f17c5aea264c5f0
 =======
+=======
+>>>>>>> f960a5bab0988b57c7bde08028f7c1e9db4e150b
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17 (2)" project-jdk-type="JavaSDK" />
->>>>>>> 07ded85338e57a5078e3a06ed3d18ae97c84689c
 </project>
