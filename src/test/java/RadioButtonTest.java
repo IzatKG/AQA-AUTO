@@ -23,7 +23,7 @@ public class RadioButtonTest extends BaseTest {
     }
 
     @Test
-    @DisplayName("")
+    @DisplayName("Check radio button Impressive")
     public void checkImpressiveButtonTest() {
         checkboxPage.clickElementsBtn();
         mainPage.radioButton.click();
