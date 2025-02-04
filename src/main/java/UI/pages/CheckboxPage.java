@@ -30,8 +30,17 @@ public class CheckboxPage extends BasePage {
     @FindBy(xpath = "//label[@for='tree-node-react']")
     public WebElement nodeReact;
 
+    @FindBy(xpath = "//label[@for='tree-node-veu']")
+    public WebElement nodeVeu;
+
+    @FindBy(xpath = "//label[@for='tree-node-office']")
+    public WebElement nodeOffice;
+
     @FindBy(xpath = "//label[@for='tree-node-private']")
     public WebElement nodePrivate;
+
+    @FindBy(xpath = "//label[@for='tree-node-general")
+    public WebElement nodeGeneral;
 
     @FindBy(xpath = "//label[@for='tree-node-downloads']")
     public WebElement nodeDownloads;
@@ -56,7 +65,10 @@ public class CheckboxPage extends BasePage {
     public CheckboxPage clickCheckboxBtnAndPath() {
         elementActions.click(nodeCommands);
         elementActions.click(nodeReact);
+        elementActions.click(nodeVeu);
+        elementActions.click(nodeOffice);
         elementActions.click(nodePrivate);
+        elementActions.click(nodeGeneral);
         elementActions.click(nodeDownloads);
         return this;
     }
