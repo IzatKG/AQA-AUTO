@@ -39,7 +39,7 @@ public class CheckboxPage extends BasePage {
     @FindBy(xpath = "//label[@for='tree-node-private']")
     public WebElement nodePrivate;
 
-    @FindBy(xpath = "//label[@for='tree-node-general")
+    @FindBy(xpath = "//label[@for='tree-node-general']")
     public WebElement nodeGeneral;
 
     @FindBy(xpath = "//label[@for='tree-node-downloads']")
