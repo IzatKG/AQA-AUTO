@@ -8,6 +8,5 @@ public class MainPage extends BasePage{
     @FindBy(xpath = "//span[text()='Radio Button']")
     public WebElement radioButton;
 
-    @FindBy(xpath = "//span[test()='")
-    public WebElement buttonElement;
+
 }
