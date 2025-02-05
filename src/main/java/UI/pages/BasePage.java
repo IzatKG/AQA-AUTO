@@ -4,7 +4,7 @@ import UI.driver.Driver;
 import UI.helper.WebElementActions;
 import org.openqa.selenium.support.PageFactory;
 
-public class BasePage {
+public abstract class BasePage {
    public WebElementActions elementActions = new WebElementActions();
     public BasePage(){
       //  PageFactory.initElements(Driver.getDriver(),CheckboxPage.class);

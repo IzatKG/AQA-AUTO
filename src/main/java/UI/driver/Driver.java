@@ -1,10 +1,6 @@
 package UI.driver;
 
 import UI.driverFactory.ChromeWebDriver;
-import UI.driverFactory.PropertyReader;
-import UI.owner.ConfigProperties;
-import com.fasterxml.jackson.databind.cfg.ConfigFeature;
-import org.aeonbits.owner.ConfigFactory;
 import UI.owner.ConfigProperties;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
@@ -28,7 +24,7 @@ public class Driver {
                driver = ChromeWebDriver.loadChromeDriver();
                break;
            case "edge":
-               System.setProperty("webfriver.edge.driver","src/main/.........");
+               System.setProperty("webDriver.edge.driver","src/main/.........");
                driver = new EdgeDriver();
                break;
            default:

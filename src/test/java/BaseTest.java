@@ -10,7 +10,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.WebDriver;
 
-public class BaseTest {
+public abstract class BaseTest {
     public static CheckboxPage checkboxPage;
 
     public static RadioButtonPage radioButtonPage;
