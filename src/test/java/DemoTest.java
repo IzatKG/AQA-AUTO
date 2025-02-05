@@ -6,7 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-@Owner(Owners.BEKZHAN_BARATOV)
+@Owner(Owners.IZAT_YKLASOV)
 public class DemoTest extends BaseTest {
     @Test
     public void checkChceckboxTest(){

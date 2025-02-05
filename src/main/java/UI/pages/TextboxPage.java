@@ -1,4 +1,4 @@
 package UI.pages;
 
-public class TextboxPage {
+public class TextBoxPage {
 }
