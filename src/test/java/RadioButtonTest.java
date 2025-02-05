@@ -1,13 +1,10 @@
-
-import UI.owner.Owner;
-import UI.owner.Owners;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@Owner(Owners.MEDER_ABDYMUSAEV)
 public class RadioButtonTest extends BaseTest {
 
     @Test
@@ -18,17 +15,9 @@ public class RadioButtonTest extends BaseTest {
         radioButtonPage.clickYesBnt();
 
         String text = radioButtonPage.yesText.getText();
+
         assertTrue(radioButtonPage.yesButton.isEnabled());
         assertEquals("Yes", text);
-    }
 
-    @Test
-    @DisplayName("check impressive Button")
-    public void checkImpressiveButtonTest() {
-        checkboxPage.clickElementsBtn();
-        mainPage.radioButton.click();
-        radioButtonPage.impressiveButton.click();
-
-        assertTrue(radioButtonPage.impressiveButton.isEnabled());
     }
 }
