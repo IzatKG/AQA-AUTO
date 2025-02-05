@@ -1,6 +1,7 @@
 package UI.driver;
 
 import UI.driverFactory.ChromeWebDriver;
+import UI.driverFactory.EdgeWebDriver;
 import UI.driverFactory.PropertyReader;
 import UI.owner.ConfigProperties;
 import org.aeonbits.owner.ConfigFactory;
@@ -25,11 +26,10 @@ public class Driver {
                driver = ChromeWebDriver.loadChromeDriver();
                break;
            case "edge":
-               System.setProperty("webfriver.edge.driver","src/main/.........");
-               driver = new EdgeDriver();
+               driver = EdgeWebDriver.loadEdgeDriver();
                break;
            default:
-               throw new WebDriverException("Указанный браузер не поддерживается : " + browser);
+               throw new WebDriverException("Browser is null: " + browser);
        }
 
         }
