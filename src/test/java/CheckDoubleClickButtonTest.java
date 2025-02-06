@@ -19,4 +19,26 @@ public class CheckDoubleClickButtonTest extends BaseTest {
         assertEquals(ERROR_MESSAGE, buttonsPage.message.getText());
 
     }
+
+    @Test
+    @DisplayName("Check the right click")
+    public void checkRightClickBtn() {
+        checkboxPage.clickElementsBtn();
+        elementsPage.clickButtonElement();
+        buttonsPage.rightClickBtnElement();
+
+    }
+
+    @Test
+    @DisplayName("Check the Click Me click")
+    public void checkClickMeBtn() {
+        checkboxPage.clickElementsBtn();
+        elementsPage.clickButtonElement();
+        buttonsPage.clickMeButtonElement();
+
+       // System.out.println(buttonsPage.message1.getText());
+
+        assertTrue(buttonsPage.message1.isDisplayed());
+        assertEquals("You have done a dynamic click", buttonsPage.message1.getText());
+    }
 }

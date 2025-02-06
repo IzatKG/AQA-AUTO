@@ -9,13 +9,15 @@ import org.openqa.selenium.WebElement;
 
 import static UI.pages.CheckboxPage.scrollToElement;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
 @Owner(Owners.TOBOKELOV_JOLDOSH)
 public class DemoTest extends BaseTest {
 
     @Test
-   public void checkboxTest(){
+    public void checkboxTest() {
         checkboxPage.elementsButton.click();
     }
+
     @Test
     @DisplayName("Checkbox test")
     public void checkCheckboxTest() {
@@ -23,6 +25,7 @@ public class DemoTest extends BaseTest {
         scrollToElement(driver, elementsButton);
         elementsButton.click();
     }
+
     @Test
     @DisplayName("Demo test")
     public void demoTest() {//span[@class='rct-checkbox'][1]

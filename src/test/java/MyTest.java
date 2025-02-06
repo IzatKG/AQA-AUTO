@@ -4,16 +4,18 @@ import org.junit.jupiter.api.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @Tag("smoke")
-public class MyTest{
+public class MyTest {
 
     @BeforeEach
-    public void beforeEach(){
+    public void beforeEach() {
         System.out.println("BEFORE_EACH");
     }
+
     @AfterEach
-    public void afterEach(){
+    public void afterEach() {
         System.out.println("AFTER_EACH");
     }
+
     @BeforeAll
     public static void setUp() {
         System.out.println("Berfore_ALL");
@@ -42,6 +44,7 @@ public class MyTest{
         System.out.println("2 test");
 
     }
+
     @Test
     @DisplayName("check the foodButton")
     @Order(2)
