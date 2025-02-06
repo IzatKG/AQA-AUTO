@@ -15,7 +15,7 @@ public class ElementsPage extends BasePage {
 
     @Step("Кликнуть по элементу два раза")
     public ElementsPage clickButtonElement() {
-        buttonsElement.click();
+       buttonsElement.click();
         return this;
     }
 }
