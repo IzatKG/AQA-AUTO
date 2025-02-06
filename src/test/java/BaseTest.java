@@ -16,6 +16,7 @@ public abstract class BaseTest {
     public static WebDriver driver;
     public static ButtonsPage buttonsPage;
     public static ElementsPage elementsPage;
+    public static DynamicPropertyPage dynamicPropertyPage;
     static ConfigProperties config = ConfigFactory.create(ConfigProperties.class);
 
     @BeforeAll
@@ -26,6 +27,7 @@ public abstract class BaseTest {
         webElementActions = new WebElementActions();
         buttonsPage = new ButtonsPage();
         elementsPage = new ElementsPage();
+        dynamicPropertyPage = new DynamicPropertyPage();
         // PropertyReader.readProperty();
         driver = Driver.getDriver();
         // driver.get("https://demoqa.com");
