@@ -13,4 +13,13 @@ public class checkDynamicPropertyTest extends BaseTest{
         assertTrue(dynamicPropertyPage.enableAfterElement.isEnabled());
 
     }
+    @Test
+    public void checkColorChange(){
+        checkboxPage.clickElementsBtn();
+       dynamicPropertyPage.dynPropertyButton.click();
+        dynamicPropertyPage.colorChangeElement.click();
+
+        assertTrue(dynamicPropertyPage.colorChangeElement.isEnabled());
+    }
+
 }

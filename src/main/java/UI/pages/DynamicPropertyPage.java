@@ -1,3 +1,4 @@
+
 package UI.pages;
 
 import io.qameta.allure.Step;
@@ -12,9 +13,28 @@ public class DynamicPropertyPage extends BasePage {
     @FindBy(id = "enableAfter")
     public WebElement enableAfterElement;
 
+    @FindBy(id = "colorChange")
+    public WebElement colorChangeElement;
+
+    @FindBy(id = "visibleAfter")
+    public WebElement visibleAfterElement;
+
     @Step
-    public DynamicPropertyPage clickDynPropertyButton(){
-         wait.until(ExpectedConditions.elementToBeClickable(enableAfterElement));
-         return this;
+    public DynamicPropertyPage clickDynPropertyButton() {
+        wait.until(ExpectedConditions.elementToBeClickable(enableAfterElement));
+        return this;
+    }
+
+    @Step
+    public DynamicPropertyPage clickColorChange() {
+        // wait.until(ExpectedConditions.elementToBeClickable(colorChangeElement));
+        actions.click(colorChangeElement).perform();
+        return this;
+    }
+
+    @Step
+    public DynamicPropertyPage clickVisibleAfter() {
+        wait.until(ExpectedConditions.elementToBeClickable(visibleAfterElement));
+        return this;
     }
 }
