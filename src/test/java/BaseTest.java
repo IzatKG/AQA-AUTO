@@ -36,9 +36,9 @@ public abstract class BaseTest {
 
     }
 
-    @AfterAll
-    public static void tearDown() {
-
-        Driver.quitDriver();
-    }
+//    @AfterAll
+//    public static void tearDown() {
+//
+//        Driver.quitDriver();
+//    }
 }
