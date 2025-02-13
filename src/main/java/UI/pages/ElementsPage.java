@@ -13,6 +13,9 @@ public class ElementsPage extends BasePage {
     @FindBy(xpath = "//span[text()='Buttons']")
     public WebElement buttonsElement;
 
+    @FindBy(xpath = "//span[text()='Text Box']")
+    public WebElement textBoxButton;
+
     @Step("Кликнуть по элементу два раза")
     public ElementsPage clickButtonElement() {
        buttonsElement.click();

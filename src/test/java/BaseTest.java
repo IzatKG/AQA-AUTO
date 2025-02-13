@@ -4,9 +4,10 @@ import UI.helper.WebElementActions;
 import UI.owner.ConfigProperties;
 import UI.pages.*;
 import org.aeonbits.owner.ConfigFactory;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
+
+import java.io.IOException;
 
 public abstract class BaseTest {
    public static CheckboxPage checkboxPage;
@@ -17,7 +18,10 @@ public abstract class BaseTest {
     public static ButtonsPage buttonsPage;
     public static ElementsPage elementsPage;
     public static DynamicPropertyPage dynamicPropertyPage;
+    public static AmazonMainpage amazonMainpage;
+    public static TextboxPage textboxPage;
    static ConfigProperties config = ConfigFactory.create(ConfigProperties.class);
+
 
     @BeforeAll
     public static void setUp() {
@@ -28,17 +32,20 @@ public abstract class BaseTest {
        buttonsPage = new ButtonsPage();
        elementsPage = new ElementsPage();
        dynamicPropertyPage =new DynamicPropertyPage();
-        // PropertyReader.readProperty();
+       amazonMainpage =new AmazonMainpage();
+       textboxPage =new TextboxPage();
          driver = Driver.getDriver();
-       // driver.get("https://demoqa.com");
-
         driver.get(config.url());
 
     }
-
+    @AfterEach
+    void checkTestResult(TestInfo testInfo, TestReporter testReporter) throws IOException {
+        if (testInfo.getTags().contains("failed")) { // Проверяем, упал ли тест
+            WebElementActions.takeScreenshot(testInfo.getDisplayName());
+        }
+    }
     @AfterAll
     public static void tearDown() {
-
         Driver.quitDriver();
     }
 }
