@@ -17,6 +17,7 @@ public abstract class BaseTest {
     public static ButtonsPage buttonsPage;
     public static ElementsPage elementsPage;
     public static DynamicPropertyPage dynamicPropertyPage;
+    public static TextBoxPage textBoxPage;
     static ConfigProperties config = ConfigFactory.create(ConfigProperties.class);
 
     @BeforeAll
@@ -28,6 +29,7 @@ public abstract class BaseTest {
         buttonsPage = new ButtonsPage();
         elementsPage = new ElementsPage();
         dynamicPropertyPage = new DynamicPropertyPage();
+        textBoxPage = new TextBoxPage();
         // PropertyReader.readProperty();
         driver = Driver.getDriver();
         // driver.get("https://demoqa.com");

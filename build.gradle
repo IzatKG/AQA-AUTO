@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'io.qameta.allure' version '2.11.2'
+    id 'org.gradle.test-retry' version '1.6.0'
 
 }
 
@@ -28,12 +29,14 @@ dependencies {
     implementation 'io.qameta.allure:allure-junit5:2.22.0'
     implementation 'io.qameta.allure:allure-java-commons:2.22.0'
 
-
-
 }
 
 test {
     useJUnitPlatform()
+    retry{
+        maxRetries = 2
+        failOnPassedAfterRetry = true
+    }
 }
 
 allure {
