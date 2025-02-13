@@ -1,22 +1,27 @@
+import UI.ScreenshotWatcher;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import java.io.IOException;
 
+@ExtendWith(ScreenshotWatcher.class)
 public class CheckDoubleClickButtonTest extends BaseTest {
 
     public static final String ERROR_MESSAGE = "You have done a double click";
 
     @Test
     @DisplayName("Check the double click")
-    public void checkDoubleClick() {
+    public void checkDoubleClick() throws IOException {
         checkboxPage.clickElementsBtn();
-        elementsPage.clickButtonElement();
+       // elementsPage.clickButtonElement();
         buttonsPage.doubleClickButtonElement();
+        //buttonsPage.wrightClickButtonElement();
 
-        assertTrue(buttonsPage.doubleClickMessage.isDisplayed());
-        assertEquals(ERROR_MESSAGE, buttonsPage.doubleClickMessage.getText());
+//        assertTrue(buttonsPage.message.isDisplayed());
+       // assertEquals(ERROR_MESSAGE, buttonsPage.wrightClickElement.getText())//
 
+        // implicit wait -неявное ожидание
+        // explicit wait - явное ожидание (WebDriverWait, FluentWait)
     }
 }

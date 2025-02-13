@@ -2,7 +2,7 @@ package UI.driver;
 
 import UI.driverFactory.ChromeWebDriver;
 import UI.driverFactory.EdgeWebDriver;
-import UI.driverFactory.PropertyReader;
+
 import UI.owner.ConfigProperties;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
