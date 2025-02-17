@@ -1,14 +1,18 @@
 
+import UI.ScreenshotWatcher;
 import UI.driver.Driver;
 import UI.helper.WebElementActions;
 import UI.owner.ConfigProperties;
 import UI.pages.*;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-
+@ExtendWith(ScreenshotWatcher.class)
 public abstract class BaseTest {
    public static CheckboxPage checkboxPage;
    public static RadioButtonPage radioButtonPage;
@@ -20,9 +24,15 @@ public abstract class BaseTest {
     public static DynamicPropertyPage dynamicPropertyPage;
     public static AmazonMainpage amazonMainpage;
     public static TextboxPage textboxPage;
+    public static SelectMainPage selectMainPage;
+    public static WidgetsPage widgetsPage;
+
+    public static AlertsPage alertsPage;
+    public static BrowserWindowsPage browserWindowsPage;
    static ConfigProperties config = ConfigFactory.create(ConfigProperties.class);
 
-
+    public static final Logger logger = LoggerFactory.getLogger(BasePage.class);
+   public static String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
     @BeforeAll
     public static void setUp() {
        checkboxPage =new CheckboxPage();
@@ -34,8 +44,16 @@ public abstract class BaseTest {
        dynamicPropertyPage =new DynamicPropertyPage();
        amazonMainpage =new AmazonMainpage();
        textboxPage =new TextboxPage();
+       selectMainPage = new SelectMainPage();
+       widgetsPage = new WidgetsPage();
+       alertsPage = new AlertsPage();
+       browserWindowsPage = new BrowserWindowsPage();
          driver = Driver.getDriver();
         driver.get(config.url());
+
+        logger.info("TEST STARTED!!!" );
+        logger.warn("ATTENTION!!!");
+        logger.error("Something went wrong!!!");
 
     }
     @AfterEach
@@ -43,9 +61,13 @@ public abstract class BaseTest {
         if (testInfo.getTags().contains("failed")) { // Проверяем, упал ли тест
             WebElementActions.takeScreenshot(testInfo.getDisplayName());
         }
+
+        logger.info("STARTED in method: {}", Thread.currentThread().getStackTrace()[1].getMethodName());
+
     }
     @AfterAll
     public static void tearDown() {
-        Driver.quitDriver();
+
+        //Driver.quitDriver();
     }
 }

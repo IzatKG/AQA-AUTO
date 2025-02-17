@@ -1,13 +1,15 @@
 package UI.pages;
 
 import UI.driver.Driver;
-import UI.entities.UserData;
+import UI.dto.UserData;
 import UI.helper.WebElementActions;
 import UI.utils.DataProvider;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.util.List;
 
 public class TextboxPage extends BasePage {
     @FindBy(xpath = "//input[@placeholder='Full Name']")
@@ -22,6 +24,9 @@ public class TextboxPage extends BasePage {
     @FindBy(xpath = "//button[contains(@class, 'btn-primary')]")
     public WebElement submitButton;
 
+    @FindBy( className = "mb-1")
+    public List<WebElement> textAfterSubmit;
+
     @Step("Fill registration form for a new user")
     public TextboxPage fillRegistrationForm(UserData userData) {
         fullNameInputField.sendKeys(userData.getFullName());
@@ -34,7 +39,7 @@ public class TextboxPage extends BasePage {
         return this;
     }
 
-    @Step
+    @Step("")
     public TextboxPage fillForm(){
         UserData user = DataProvider.getUser();
         fillRegistrationForm(user);

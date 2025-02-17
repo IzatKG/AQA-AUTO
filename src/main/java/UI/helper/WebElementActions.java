@@ -30,7 +30,7 @@ public class WebElementActions {
         File destination = new File(screenshotPath);
         Files.copy(screenshot.toPath(), destination.toPath());
 
-        System.out.println("📸 Скриншот сохранен: " + destination.getAbsolutePath());
+        System.out.println("Screenshot saved: " + destination.getAbsolutePath());
     }
 
     public static void scrollToElement(WebDriver driver, WebElement element) {

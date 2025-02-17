@@ -1,9 +1,8 @@
 package UI.utils;
 
-import UI.entities.UserData;
+import UI.dto.UserData;
 
 public class DataProvider {
-
     public static UserData getUser(){
         return UserData.builder()
                 .fullName("IZat")
