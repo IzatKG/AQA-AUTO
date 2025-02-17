@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.List;
+
 public class TextboxPage extends BasePage {
     @FindBy(xpath = "//input[@placeholder='Full Name']")
     public WebElement fullNameInputField;
@@ -22,8 +24,11 @@ public class TextboxPage extends BasePage {
     @FindBy(xpath = "//button[contains(@class, 'btn-primary')]")
     public WebElement submitButton;
 
+    @FindBy(className = "mb-1")
+    public List<WebElement> textAfterSubmit;
+
     @Step("Fill registration form for a new user")
-    public TextboxPage fillRegistrationForm(UserData userData) {
+    public TextboxPage fullRegistrationForm(UserData userData) {
         fullNameInputField.sendKeys(userData.getFullName());
         emailInputField.sendKeys(userData.getEmail());
         currentAddressInputField.sendKeys(userData.getCurrentAddress());
@@ -35,9 +40,9 @@ public class TextboxPage extends BasePage {
     }
 
     @Step
-    public TextboxPage fillForm(){
+    public TextboxPage fullForm(){
         UserData user = DataProvider.getUser();
-        fillRegistrationForm(user);
+        fullRegistrationForm(user);
         return this;
     }
 

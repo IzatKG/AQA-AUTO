@@ -35,7 +35,10 @@ public class WebElementActions {
 
     public static void scrollToElement(WebDriver driver, WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView(true);", element);
+        //js.executeScript("window.scrollBy(0,900);");
+       // js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+       // js.executeScript("arguments[0].scrollIntoView(true);", element);
+        js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", element);
     }
 
     public WebElementActions click(WebElement element){

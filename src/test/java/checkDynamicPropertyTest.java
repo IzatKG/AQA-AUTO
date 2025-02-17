@@ -7,9 +7,9 @@ public class checkDynamicPropertyTest extends BaseTest{
     @Test
     public void checkDynamicPropertiesTest(){
         checkboxPage.clickElementsBtn();
-        dynamicPropertyPage.dynPropertyButton.click();
         dynamicPropertyPage.clickDynPropertyButton();
 
+        assertTrue(dynamicPropertyPage.dynPropertyButton.isEnabled());
         assertTrue(dynamicPropertyPage.enableAfterElement.isEnabled());
 
     }

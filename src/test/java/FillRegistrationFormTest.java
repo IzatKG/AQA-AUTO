@@ -46,8 +46,8 @@ public class FillRegistrationFormTest extends BaseTest {
 
     static Stream<Arguments> userData (){
         return Stream.of(
-                Arguments.of("Kanat", "email@.ru", "fgfhgfhg", "45"),
-                Arguments.of("meder", "email@gamil.com", "fgfhgfhg", "44"),
+                Arguments.of("Azamatik","Azamatik@gmail.com","Траляяля",35),
+                Arguments.of("Meder", "abdymusaev@gmail.com", "Хахаха", "30"),
                 Arguments.of("Azamat", "email@.ru", "fgfhgfhg", "48")
         );
     }
