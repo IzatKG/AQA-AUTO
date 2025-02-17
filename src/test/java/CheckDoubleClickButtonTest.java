@@ -5,7 +5,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.io.IOException;
 
-@ExtendWith(ScreenshotWatcher.class)
+
 public class CheckDoubleClickButtonTest extends BaseTest {
 
     public static final String ERROR_MESSAGE = "You have done a double click";
