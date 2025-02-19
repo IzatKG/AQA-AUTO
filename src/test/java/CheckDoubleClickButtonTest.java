@@ -15,8 +15,8 @@ public class CheckDoubleClickButtonTest extends BaseTest {
         elementsPage.clickButtonElement();
         buttonsPage.doubleClickButtonElement();
 
-        assertTrue(buttonsPage.doubleClickMessage.isDisplayed());
-        assertEquals(ERROR_MESSAGE, buttonsPage.doubleClickMessage.getText());
+        assertTrue(buttonsPage.message.isDisplayed());
+        assertEquals(ERROR_MESSAGE, buttonsPage.message.getText());
 
     }
 }

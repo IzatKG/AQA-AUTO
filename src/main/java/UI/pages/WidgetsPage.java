@@ -8,11 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import static UI.helper.WebElementActions.scrollToElement;
 
 public class WidgetsPage extends BasePage {
-    @FindBy(xpath = "//span[text()='Select menu'")
     public WebElement selectMenuButton;
-  //  @Step("Клик по элементу selectMenu")
-    // public WidgetsPage clickMenuSelect(){
-      //  scrollToElement(Driver.getDriver(), clickMenuSelect());
-  //  }
 
 }
