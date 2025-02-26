@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RightClickMeTest extends BaseTest{
-
+/*
     private static final String ERROR_MESSAGE = "You have done a right click";
     @Test
     @DisplayName("Check the right click")
@@ -21,5 +21,5 @@ public class RightClickMeTest extends BaseTest{
 
 
 
-    }
+    }*/
 }

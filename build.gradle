@@ -27,13 +27,19 @@ dependencies {
     implementation 'org.aeonbits.owner:owner:1.0.12'
     implementation 'io.qameta.allure:allure-junit5:2.22.0'
     implementation 'io.qameta.allure:allure-java-commons:2.22.0'
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation 'org.testng:testng:7.10.2'
+    // https://mvnrepository.com/artifact/com.github.javafaker/javafaker
+    implementation 'com.github.javafaker:javafaker:1.0.2'
+
 
 
 
 }
 
 test {
-    useJUnitPlatform()
+  //  useJUnitPlatform()
+    useTestNG()
 }
 
 allure {

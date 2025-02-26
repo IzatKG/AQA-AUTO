@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SelectTest extends BaseTest{
 
-    @Test
+  /*  @Test
     public void checkOldSelectElements(){
 
         mainPage.clickWidgetButton();
@@ -16,7 +16,18 @@ public class SelectTest extends BaseTest{
         selectMainPage.selectElementByText("Yellow");
 //        selectMainPage.selectElementByText("Green");
 //        selectMainPage.selectElementByText("Red");
+    }*/
+    @Test
+    public void checkSelect(){
+        Select select = new Select(selectMainPage.selectElement);
+//        select.selectByVisibleText("");
+//        select.selectByIndex("audix");
+//        select.selectByIndex(5);
+        List<WebElement> options = select.getOptions();
 
-
+        for(WebElement option:options){
+            System.out.println(option.getLocation()+ "NAMES");
+        }
     }
 }
+

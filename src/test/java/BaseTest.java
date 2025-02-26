@@ -17,17 +17,39 @@ public abstract class BaseTest {
     public static ButtonsPage buttonsPage;
     public static ElementsPage elementsPage;
     public static DynamicPropertyPage dynamicPropertyPage;
+    public static AmazonMainpage amazonMainpage;
+    public static TextboxPage textboxPage;
+    public static SelectMainPage selectMainPage;
+    public static WidgetsPage widgetsPage;
+    public static AlertsPage2 alertsPage2;
+    public static BrowserWindowsPage browserWindowsPage;
+    public static NewWindowPage newWindowPage;
+    public static NewWindowMessagePage newWindowMessagePage;
+    public static FillFormPage fillFormPage;
+
    static ConfigProperties config = ConfigFactory.create(ConfigProperties.class);
 
     @BeforeAll
     public static void setUp() {
-       checkboxPage =new CheckboxPage();
-       radioButtonPage = new RadioButtonPage();
-       mainPage = new MainPage();
-       webElementActions = new WebElementActions();
-       buttonsPage = new ButtonsPage();
-       elementsPage = new ElementsPage();
-       dynamicPropertyPage =new DynamicPropertyPage();
+
+        checkboxPage =new CheckboxPage();
+        radioButtonPage = new RadioButtonPage();
+        mainPage = new MainPage();
+        webElementActions = new WebElementActions();
+        buttonsPage = new ButtonsPage();
+        elementsPage = new ElementsPage();
+        dynamicPropertyPage =new DynamicPropertyPage();
+        amazonMainpage =new AmazonMainpage();
+        textboxPage =new TextboxPage();
+        selectMainPage=new SelectMainPage();
+        driver = Driver.getDriver();
+        driver.get(config.url());
+        widgetsPage = new WidgetsPage();
+        alertsPage2 = new AlertsPage2();
+        browserWindowsPage = new BrowserWindowsPage();
+        newWindowPage = new NewWindowPage();
+        newWindowMessagePage = new NewWindowMessagePage();
+        fillFormPage = new FillFormPage();
         // PropertyReader.readProperty();
          driver = Driver.getDriver();
        // driver.get("https://demoqa.com");

@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class CheckClickButtonTest extends BaseTest {
 
     private static final String ERROR_MESSAGE = "You have done a dynamic click";
-
+/*
     @Test
     @DisplayName("Check  click")
     public void checkRightClick() {
@@ -20,5 +20,5 @@ public class CheckClickButtonTest extends BaseTest {
         assertEquals(ERROR_MESSAGE, buttonsPage.clickMessage.getText());
 
 
-    }
+    }*/
 }

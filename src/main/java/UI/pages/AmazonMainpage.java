@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class AmazonMainpage extends BasePage{
+public class  AmazonMainpage extends BasePage{
 
     @FindBy(xpath ="(//a[text()='Start here.'])[17]")
     public WebElement signInButton;

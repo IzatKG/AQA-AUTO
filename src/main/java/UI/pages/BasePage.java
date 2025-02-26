@@ -2,6 +2,7 @@ package UI.pages;
 
 import UI.driver.Driver;
 import UI.helper.WebElementActions;
+import com.github.javafaker.Faker;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
@@ -13,6 +14,8 @@ public abstract class BasePage {
     public WebElementActions elementActions = new WebElementActions();
     public Actions actions = new Actions(Driver.getDriver());
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+
+    Faker faker = new Faker();
     public BasePage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
