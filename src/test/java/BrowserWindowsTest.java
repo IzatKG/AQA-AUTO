@@ -1,4 +1,4 @@
-import UI.helper.WebElementActions;
+import bnp_ui_autotest.UI.helper.WebElementActions;
 import org.junit.jupiter.api.Test;
 
 import java.util.Set;

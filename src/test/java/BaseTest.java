@@ -1,9 +1,9 @@
 
-import UI.ScreenshotWatcher;
-import UI.driver.Driver;
-import UI.helper.WebElementActions;
-import UI.owner.ConfigProperties;
-import UI.pages.*;
+import bnp_ui_autotest.UI.ScreenshotWatcher;
+import bnp_ui_autotest.UI.driver.Driver;
+import bnp_ui_autotest.UI.helper.WebElementActions;
+import bnp_ui_autotest.UI.owner.ConfigProperties;
+import bnp_ui_autotest.UI.pages.*;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -29,6 +29,9 @@ public abstract class BaseTest {
 
     public static AlertsPage alertsPage;
     public static BrowserWindowsPage browserWindowsPage;
+    public static DropablePage dropablePage;
+    public static SliderPage sliderPage;
+    public static FillFormPage fillFormPage;
    static ConfigProperties config = ConfigFactory.create(ConfigProperties.class);
 
     public static final Logger logger = LoggerFactory.getLogger(BasePage.class);
@@ -48,8 +51,12 @@ public abstract class BaseTest {
        widgetsPage = new WidgetsPage();
        alertsPage = new AlertsPage();
        browserWindowsPage = new BrowserWindowsPage();
+       dropablePage = new DropablePage();
+       sliderPage = new SliderPage();
+       fillFormPage = new FillFormPage();
          driver = Driver.getDriver();
         driver.get(config.url());
+
 
         logger.info("TEST STARTED!!!" );
         logger.warn("ATTENTION!!!");
@@ -68,6 +75,6 @@ public abstract class BaseTest {
     @AfterAll
     public static void tearDown() {
 
-        //Driver.quitDriver();
+        Driver.quitDriver();
     }
 }

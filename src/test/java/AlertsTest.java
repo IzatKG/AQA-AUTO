@@ -1,13 +1,10 @@
-import UI.driver.Driver;
-import UI.helper.WebElementActions;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
+@Story("")
 public class AlertsTest extends BaseTest {
 
     @Test

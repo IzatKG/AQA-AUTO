@@ -40,3 +40,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+# ScreenShots
+screenshots/
+allure-results/
+allure-report/

@@ -1,7 +1,6 @@
 
-import UI.driver.Driver;
-import UI.owner.Owner;
-import UI.owner.Owners;
+import bnp_ui_autotest.UI.owner.Owner;
+import bnp_ui_autotest.UI.owner.Owners;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Test;
