@@ -12,13 +12,17 @@ public class AlertsTest extends BaseTest {
 
     @Test
     public void alertTest() {
-        alertsPage.clickMeButton();
-        Alert alert = driver.switchTo().alert();
 
-        assertEquals("You clicked a button", alert.getText());
+        Driver.getDriver().findElement(By.xpath("//button[@onclick='jsAlert()']")).click();
+
+        Alert alert = Driver.getDriver().switchTo().alert();
+
+        String alertText = alert.getText();
+        System.out.println("Alert Text: " + alertText);
+
+        assertEquals("I am a JS Alert", alertText);
 
         alert.accept();
-
     }
 }
 

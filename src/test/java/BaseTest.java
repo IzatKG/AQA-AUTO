@@ -1,18 +1,13 @@
 
-import UI.ScreenshotWatcher;
 import UI.driver.Driver;
 import UI.helper.WebElementActions;
 import UI.owner.ConfigProperties;
 import UI.pages.*;
 import org.aeonbits.owner.ConfigFactory;
-import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.WebDriver;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
-@ExtendWith(ScreenshotWatcher.class)
 public abstract class BaseTest {
    public static CheckboxPage checkboxPage;
    public static RadioButtonPage radioButtonPage;
@@ -26,48 +21,46 @@ public abstract class BaseTest {
     public static TextboxPage textboxPage;
     public static SelectMainPage selectMainPage;
     public static WidgetsPage widgetsPage;
-
-    public static AlertsPage alertsPage;
+    public static AlertsPage2 alertsPage2;
     public static BrowserWindowsPage browserWindowsPage;
+    public static NewWindowPage newWindowPage;
+    public static NewWindowMessagePage newWindowMessagePage;
+    public static FillFormPage fillFormPage;
+
    static ConfigProperties config = ConfigFactory.create(ConfigProperties.class);
 
-    public static final Logger logger = LoggerFactory.getLogger(BasePage.class);
-   public static String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
     @BeforeAll
     public static void setUp() {
-       checkboxPage =new CheckboxPage();
-       radioButtonPage = new RadioButtonPage();
-       mainPage = new MainPage();
-       webElementActions = new WebElementActions();
-       buttonsPage = new ButtonsPage();
-       elementsPage = new ElementsPage();
-       dynamicPropertyPage =new DynamicPropertyPage();
-       amazonMainpage =new AmazonMainpage();
-       textboxPage =new TextboxPage();
-       selectMainPage = new SelectMainPage();
-       widgetsPage = new WidgetsPage();
-       alertsPage = new AlertsPage();
-       browserWindowsPage = new BrowserWindowsPage();
+
+        checkboxPage =new CheckboxPage();
+        radioButtonPage = new RadioButtonPage();
+        mainPage = new MainPage();
+        webElementActions = new WebElementActions();
+        buttonsPage = new ButtonsPage();
+        elementsPage = new ElementsPage();
+        dynamicPropertyPage =new DynamicPropertyPage();
+        amazonMainpage =new AmazonMainpage();
+        textboxPage =new TextboxPage();
+        selectMainPage=new SelectMainPage();
+        driver = Driver.getDriver();
+        driver.get(config.url());
+        widgetsPage = new WidgetsPage();
+        alertsPage2 = new AlertsPage2();
+        browserWindowsPage = new BrowserWindowsPage();
+        newWindowPage = new NewWindowPage();
+        newWindowMessagePage = new NewWindowMessagePage();
+        fillFormPage = new FillFormPage();
+        // PropertyReader.readProperty();
          driver = Driver.getDriver();
+       // driver.get("https://demoqa.com");
+
         driver.get(config.url());
 
-        logger.info("TEST STARTED!!!" );
-        logger.warn("ATTENTION!!!");
-        logger.error("Something went wrong!!!");
-
     }
-    @AfterEach
-    void checkTestResult(TestInfo testInfo, TestReporter testReporter) throws IOException {
-        if (testInfo.getTags().contains("failed")) { // Проверяем, упал ли тест
-            WebElementActions.takeScreenshot(testInfo.getDisplayName());
-        }
 
-        logger.info("STARTED in method: {}", Thread.currentThread().getStackTrace()[1].getMethodName());
-
-    }
     @AfterAll
     public static void tearDown() {
 
-        //Driver.quitDriver();
+        Driver.quitDriver();
     }
 }

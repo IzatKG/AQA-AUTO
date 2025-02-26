@@ -7,12 +7,10 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class WebElementActions {
-
     public static void takeScreenshot(String testName) throws IOException {
         if (Driver.getDriver() == null) {
             System.out.println("Driver is null");
@@ -30,7 +28,7 @@ public class WebElementActions {
         File destination = new File(screenshotPath);
         Files.copy(screenshot.toPath(), destination.toPath());
 
-        System.out.println("Screenshot saved: " + destination.getAbsolutePath());
+        System.out.println("📸 Скриншот сохранен: " + destination.getAbsolutePath());
     }
 
     public static void scrollToElement(WebDriver driver, WebElement element) {

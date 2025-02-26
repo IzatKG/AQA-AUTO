@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-public class ButtonsPage extends BasePage {
+public class ButtonsPage extends BasePage{
     @FindBy(id = "doubleClickBtn")
     public WebElement doubleClickButton;
 

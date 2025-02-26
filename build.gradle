@@ -1,7 +1,6 @@
 plugins {
     id 'java'
     id 'io.qameta.allure' version '2.11.2'
-    id 'org.gradle.test-retry' version '1.6.0'
 
 }
 
@@ -24,20 +23,23 @@ dependencies {
     implementation 'org.junit.jupiter:junit-jupiter'
     compileOnly 'org.projectlombok:lombok:1.18.24'
     implementation 'io.github.bonigarcia:webdrivermanager:5.9.2'
-    annotationProcessor 'org.projectlombok:lombok:1.18.24'
     implementation 'org.seleniumhq.selenium:selenium-java:4.26.0'
     implementation 'org.aeonbits.owner:owner:1.0.12'
     implementation 'io.qameta.allure:allure-junit5:2.22.0'
     implementation 'io.qameta.allure:allure-java-commons:2.22.0'
-    implementation  group: 'org.slf4j', name: 'slf4j-simple', version: '2.0.9'
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation 'org.testng:testng:7.10.2'
+    // https://mvnrepository.com/artifact/com.github.javafaker/javafaker
+    implementation 'com.github.javafaker:javafaker:1.0.2'
+
+
+
+
 }
 
 test {
-    useJUnitPlatform()
-//    retry{
-//        maxRetries = 1
-//        failOnPassedAfterRetry=true
-//    }
+  //  useJUnitPlatform()
+    useTestNG()
 }
 
 allure {
