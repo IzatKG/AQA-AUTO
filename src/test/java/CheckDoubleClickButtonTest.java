@@ -1,7 +1,5 @@
-import UI.ScreenshotWatcher;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.io.IOException;
 
@@ -14,7 +12,8 @@ public class CheckDoubleClickButtonTest extends BaseTest {
     @DisplayName("Check the double click")
     public void checkDoubleClick() throws IOException {
         checkboxPage.clickElementsBtn();
-       // elementsPage.clickButtonElement();
+
+        elementsPage.clickButtonElement();
         buttonsPage.doubleClickButtonElement();
         //buttonsPage.wrightClickButtonElement();
 
